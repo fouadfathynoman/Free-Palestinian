@@ -1,0 +1,85 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 99%;
+    height: 100vh;
+    margin: auto
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    width: 99%;
+    height: 100%;
+    margin: auto;
+    position: relative
+}
+
+.container .flag {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    height: 90vh;
+    margin: auto
+}
+.container .flag span::before {
+    position: absolute;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    border-width: 170px;
+    border-style: solid;
+    border-color: red transparent transparent transparent;
+    content: "";
+    left: 50%;
+    transform: translate( -50%, 0%);
+    -webkit-transform: translate( -50%, 0%);
+    -moz-transform: translate( -50%, 0%);
+    -ms-transform: translate( -50%, 0%);
+    -o-transform: translate( -50%, 0%)
+}
+
+.container .flag span {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    width: calc(100%  / 4 )
+    
+}
+
+.container .flag span:nth-child(1) { background-color: #110f0f}
+.container .flag span:nth-child(2) { background-color: #dce1db}
+.container .flag span:nth-child(3) { background-color: #1d670c}
+
+.container .flag span p {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: center;
+    font-size: 22px;
+    text-transform: capitalize
+}
+
+.container .flag span p.palestine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .flag span p.fo2sh {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: #eee;
+}
+
+.palestine-end, .fo2sh-end {
+    display: none
+}

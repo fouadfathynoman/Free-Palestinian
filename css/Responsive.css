@@ -1,0 +1,85 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 600px) {
+    .container .flag span::before {
+        left: 50%;
+        transform: translate( -50%, 0%);
+        border-width: 80px;
+        border-color: red transparent transparent transparent ;
+        -webkit-transform: translate( -50%, 0%);
+        -moz-transform: translate( -50%, 0%);
+        -ms-transform: translate( -50%, 0%);
+        -o-transform: translate( -50%, 0%)
+    }
+
+    .container .flag span p.palestine, .container .flag span p.fo2sh {
+        display: none
+    }
+
+    .palestine-end, .fo2sh-end {
+        display: flex;
+        justify-items: center;
+        margin: auto;
+        font-family: Embed;
+        font-size: 22px;
+        text-transform: capitalize;
+    }
+    .palestine-end {
+        margin-bottom: -25px;
+    }
+    .fo2sh-end {
+        margin-top: -30px;
+    }
+}
+
+/* Medium devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        width: 99%;
+        height: 100vh;
+        margin: auto
+    }
+
+    .container .flag {
+        width: 75%;
+        min-width: 70%;
+        position: relative
+    }
+
+    .container .flag span::before {
+        top: 50%;
+        left: 0%;
+        transform: translate( 0%, -50%);
+        border-color: transparent transparent transparent red;
+        -webkit-transform: translate( 0%, -50%);
+        -moz-transform: translate( 0%, -50%);
+        -ms-transform: translate( 0%, -50%);
+        -o-transform: translate( 0%, -50%)
+    }
+
+    .container .flag span {
+        width: 100%;
+        height: calc(100% / 3)
+    }
+    
+    .container .flag span p.palestine {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-left: 13%;
+        font-size: xx-large
+    }
+    .container .flag span p.fo2sh {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        color: #eee;
+        width: 100%
+    }
+    .palestine-end, .fo2sh-end {
+        display: none
+    }
+}
